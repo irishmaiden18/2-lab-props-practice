@@ -12,6 +12,3 @@ const MenuItem = ({food, handleAdd}) => {
 }
 
 export default MenuItem
-
-
-//245
