@@ -6,7 +6,7 @@ const MenuItem = ({food, handleAdd}) => {
         <h3>${food.price}</h3>
         {food.available ? <p>This food is available!</p> : <p>This food is unfortunately NOT available!</p>}
         {food.onSale && <p>This Food is ON SALE NOW!</p>}
-        <button onClick={handleAdd}>Add to Order</button>
+        {food.available && <button onClick={handleAdd}>Add to Order</button>}
     </>
   )
 }
